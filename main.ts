@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     led.unplot(Colonne, Ligne)
     Direction_X = -1
     Colonne += Direction_X
-    if (Colonne > 0) {
+    if (Colonne <= -1) {
         Colonne = 4
     }
     led.plot(Colonne, Ligne)
